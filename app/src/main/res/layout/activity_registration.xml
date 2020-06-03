@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.badoonfirebase.Registration.RegistrationActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2">
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/helloTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_hello"
+            style="@style/TextViewBig"
+
+            android:layout_centerHorizontal="true"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/genderImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/maleImgBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/male"
+                    android:clickable="true"/>
+                <TextView
+
+                    style="@style/TextViewPrimary"
+                    android:text="@string/male"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/femaleImgBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@color/female"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:text="@string/female"
+
+                    style="@style/TextViewPrimary"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/logInBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genderImages"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login"
+            android:textSize="9pt"
+            android:textColor="@color/black"
+            android:background="@color/colorPrimaryDark"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

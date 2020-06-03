@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.badoonfirebase.Registration.RegistrationEmailActivity">
+
+    <TextView
+        android:id="@+id/whatIsYourEmailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_email"
+        style="@style/TextViewBig"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whatIsYourEmailTV"
+        app:boxStrokeColor="@color/colorPrimary"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconCheckable="false"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_cancel_red_24dp"
+        android:paddingHorizontal="30dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/register_email_hint"
+            android:id="@+id/registerEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/logInBtn"
+            style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerEmailEditText"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/login"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="7pt"
+            android:visibility="invisible"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/registerEmailBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:textColor="@color/black"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/next"
+        />
+
+</RelativeLayout>

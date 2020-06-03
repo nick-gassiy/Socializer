@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/darkBG">
+
+
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/frame"
+        android:background="#ffeee9e2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rotation_degrees="15.5"
+        tools:context=".MyActivity" />
+
+    <EditText
+            android:id="@+id/areaSize"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:text=""
+    />
+
+    <Button
+            android:id="@+id/test"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="60sp"
+    />
+    
+    <AutoCompleteTextView
+            android:id="@+id/selectCity"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginLeft="120sp"
+            android:hint="Введите город"
+            android:completionThreshold="1"
+            android:completionHint="Выберите город"
+    />
+    <Button
+        android:id="@+id/confirmCity"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginLeft="235sp"
+    />
+</RelativeLayout>

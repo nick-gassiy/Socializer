@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:background="@color/colorPrimary">
+
+
+    <Button
+            android:id="@+id/signOut"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выйти"
+            android:textSize="20pt"
+            android:layout_centerHorizontal="true"/>
+    <Button
+            android:id="@+id/cleanHistory"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/signOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Очистить историю"
+            android:textSize="20pt"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:id="@+id/changePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сменить пароль"
+            android:textSize="20pt"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    <Button
+            android:layout_below="@+id/changePassword"
+            android:id="@+id/uploadPhotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить новые фотографии"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:paddingTop="50sp" android:layout_marginTop="120dp"/>
+    <EditText
+            android:width="350sp"
+            android:id="@+id/changePasswordEditText"
+            android:layout_below="@+id/changePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20pt"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.badoonfirebase.Registration.RegisterDateActivity"
+    android:paddingHorizontal="30dp"
+    android:clickable="true"
+    android:onClick="onclick">
+
+    <TextView
+        android:id="@+id/whatIsYourDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewBig"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+
+    <TextView
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:id="@+id/dayTextView"
+        android:text="Ваша дата рождения"
+        android:textSize="10pt"
+        style="@style/textDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/whatIsYourDateTV"
+        />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/ageTV"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_date_tip"
+        android:layout_below="@id/dayTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="6pt"/>
+
+    <TextView
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageTV"
+        android:text="@string/date_pick"
+        android:gravity="center_horizontal"
+        android:textSize="10pt"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/registerDateBtn"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/black"
+        android:text="@string/next"
+        />
+
+</RelativeLayout>
